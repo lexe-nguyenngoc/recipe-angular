@@ -5,7 +5,9 @@
       <app-recipes
         *ngIf="loadedFeature === 'recipe'; else shoppingList"
       ></app-recipes>
-      <app-shopping-list #shoppingList></app-shopping-list>
+      <ng-template #shoppingList>
+        <app-shopping-list></app-shopping-list>
+      </ng-template>
     </div>
   </div>
 </div>
